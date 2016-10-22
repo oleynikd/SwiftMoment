@@ -47,8 +47,8 @@ extension Moment {
     }
     else if deltaSeconds > -Moment.dayInSeconds {
       // Hours Ago
-      value = floor(deltaSeconds / Moment.hourInSeconds)
-      return stringFromFormat("in %%d %@hours", withValue: Int(value))
+      value = -floor(deltaSeconds / Moment.hourInSeconds)
+      return stringFromFormat("In %%d %@hours", withValue: Int(value))
       
     }
     else if deltaSeconds < (Moment.dayInSeconds * 2) {
