@@ -48,7 +48,7 @@ extension Moment {
     else if deltaSeconds > -Moment.dayInSeconds {
       // Hours Ago
       value = -floor(deltaSeconds / Moment.hourInSeconds)
-      return stringFromFormat("In %%d %@hours", withValue: Int(value))
+      return stringFromFormat("in %%d %@hours", withValue: Int(value))
       
     }
     else if deltaSeconds < (Moment.dayInSeconds * 2) {
@@ -114,7 +114,7 @@ extension Moment {
             return ""
         }
 
-        let bundleName = "MomentFromNow.bundle"
+        let bundleName = "MomentToNow.bundle"
         let path = URL(fileURLWithPath: resourcePath).appendingPathComponent(bundleName)
         guard let bundle = Bundle(url: path) else {
             return ""
