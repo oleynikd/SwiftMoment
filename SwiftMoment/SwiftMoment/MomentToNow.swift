@@ -40,15 +40,15 @@ extension Moment {
       return stringFromFormat("in %%d %@minutes", withValue: Int(deltaSeconds / Moment.minuteInSeconds))
       
     }
-    else if deltaSeconds < (Moment.hourInSeconds * 2) {
+    else if deltaSeconds > -(Moment.hourInSeconds * 2) {
       // An Hour Ago
-      return NSDateTimeAgoLocalizedStrings("An hour ago")
+      return NSDateTimeAgoLocalizedStrings("In an hour")
       
     }
-    else if deltaSeconds < Moment.dayInSeconds {
+    else if deltaSeconds > -Moment.dayInSeconds {
       // Hours Ago
       value = floor(deltaSeconds / Moment.hourInSeconds)
-      return stringFromFormat("%%d %@hours ago", withValue: Int(value))
+      return stringFromFormat("in %%d %@hours", withValue: Int(value))
       
     }
     else if deltaSeconds < (Moment.dayInSeconds * 2) {

@@ -14,13 +14,13 @@ Assume value for (seconds, hours, minutes, days, weeks, months or years) is XXXY
 
 
 /* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
-"%d hours ago" = "%d годин тому";
+"in %d hours" = "через %d годин";
 
 /* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
-"%d _hours ago" = "%d години тому";
+"in %d _hours" = "через %d години";
 
 /* Y == 1 AND XY != 11; */
-"%d __hours ago" = "%d годину тому";
+"in %d __hours" = "через %d годину";
 
 
 /* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
@@ -77,7 +77,7 @@ Assume value for (seconds, hours, minutes, days, weeks, months or years) is XXXY
 "A minute ago" = "Хвилину тому";
 
 /* No comment provided by engineer. */
-"An hour ago" = "Годину тому";
+"In an hour" = "За годину";
 
 /* No comment provided by engineer. */
 "Just now" = "Щойно";
