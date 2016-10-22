@@ -36,6 +36,14 @@
 		28C0DBCD1D057E4000279645 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0FB8C1A6D1644006449DB /* Duration.swift */; };
 		28C0DBCE1D057E4000279645 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C31A6D2C8700B10310 /* Operators.swift */; };
 		28C0DBCF1D057E4000279645 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C51A6D33FA00B10310 /* Extensions.swift */; };
+		2955E3DA1DBC175600BEA06F /* MomentToNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955E3D91DBC175600BEA06F /* MomentToNow.swift */; };
+		2955E3DB1DBC175600BEA06F /* MomentToNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955E3D91DBC175600BEA06F /* MomentToNow.swift */; };
+		2955E3DC1DBC175600BEA06F /* MomentToNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955E3D91DBC175600BEA06F /* MomentToNow.swift */; };
+		2955E3DD1DBC175600BEA06F /* MomentToNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955E3D91DBC175600BEA06F /* MomentToNow.swift */; };
+		2955E3DF1DBC182500BEA06F /* MomentToNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2955E3DE1DBC182500BEA06F /* MomentToNow.bundle */; };
+		2955E3E01DBC182500BEA06F /* MomentToNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2955E3DE1DBC182500BEA06F /* MomentToNow.bundle */; };
+		2955E3E11DBC182500BEA06F /* MomentToNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2955E3DE1DBC182500BEA06F /* MomentToNow.bundle */; };
+		2955E3E21DBC182500BEA06F /* MomentToNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2955E3DE1DBC182500BEA06F /* MomentToNow.bundle */; };
 		3A6429C41A6D2C8700B10310 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C31A6D2C8700B10310 /* Operators.swift */; };
 		3A6429C61A6D33FA00B10310 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C51A6D33FA00B10310 /* Extensions.swift */; };
 		3A6429C81A6D345500B10310 /* DurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C71A6D345500B10310 /* DurationTests.swift */; };
@@ -97,6 +105,8 @@
 		2877F4DB1D06BCB900B66806 /* FromNowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromNowTests.swift; sourceTree = "<group>"; };
 		2877F4DF1D06BF0E00B66806 /* MomentFromNow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentFromNow.swift; sourceTree = "<group>"; };
 		28C0DBC21D057D9F00279645 /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2955E3D91DBC175600BEA06F /* MomentToNow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentToNow.swift; sourceTree = "<group>"; };
+		2955E3DE1DBC182500BEA06F /* MomentToNow.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MomentToNow.bundle; path = MomentFromNow.bundle/MomentToNow.bundle; sourceTree = "<group>"; };
 		3A6429C31A6D2C8700B10310 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		3A6429C51A6D33FA00B10310 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3A6429C71A6D345500B10310 /* DurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationTests.swift; sourceTree = "<group>"; };
@@ -199,11 +209,13 @@
 		3AB0FB6E1A6D15F8006449DB /* SwiftMoment */ = {
 			isa = PBXGroup;
 			children = (
+				2955E3DE1DBC182500BEA06F /* MomentToNow.bundle */,
 				53CB62721C919E8000BA62E9 /* MomentFromNow.bundle */,
 				3AB0FB711A6D15F8006449DB /* SwiftMoment.h */,
 				3AB0FB6F1A6D15F8006449DB /* Supporting Files */,
 				3AB0FB881A6D160F006449DB /* Moment.swift */,
 				2877F4DF1D06BF0E00B66806 /* MomentFromNow.swift */,
+				2955E3D91DBC175600BEA06F /* MomentToNow.swift */,
 				3AB0FB8A1A6D1629006449DB /* TimeUnit.swift */,
 				3AB0FB8C1A6D1644006449DB /* Duration.swift */,
 				3A6429C31A6D2C8700B10310 /* Operators.swift */,
@@ -474,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2877F4D41D06B42700B66806 /* MomentFromNow.bundle in Resources */,
+				2955E3E11DBC182500BEA06F /* MomentToNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2877F4D61D06B42900B66806 /* MomentFromNow.bundle in Resources */,
+				2955E3E21DBC182500BEA06F /* MomentToNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53C2DA3B1C99956E00604118 /* MomentFromNow.bundle in Resources */,
+				2955E3DF1DBC182500BEA06F /* MomentToNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53CB62741C919E8000BA62E9 /* MomentFromNow.bundle in Resources */,
+				2955E3E01DBC182500BEA06F /* MomentToNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +551,7 @@
 				285B8B6D1D057979008A6AD6 /* Extensions.swift in Sources */,
 				285B8B6B1D057979008A6AD6 /* Duration.swift in Sources */,
 				285B8B6C1D057979008A6AD6 /* Operators.swift in Sources */,
+				2955E3DC1DBC175600BEA06F /* MomentToNow.swift in Sources */,
 				285B8B6A1D057979008A6AD6 /* TimeUnit.swift in Sources */,
 				3AFB8ABE1DAE395000356653 /* LazyBox.swift in Sources */,
 				2877F4E21D06BF0E00B66806 /* MomentFromNow.swift in Sources */,
@@ -561,6 +578,7 @@
 				28C0DBCF1D057E4000279645 /* Extensions.swift in Sources */,
 				28C0DBCD1D057E4000279645 /* Duration.swift in Sources */,
 				28C0DBCE1D057E4000279645 /* Operators.swift in Sources */,
+				2955E3DD1DBC175600BEA06F /* MomentToNow.swift in Sources */,
 				28C0DBCC1D057E4000279645 /* TimeUnit.swift in Sources */,
 				3AFB8AC01DAE395000356653 /* LazyBox.swift in Sources */,
 				2877F4E31D06BF0E00B66806 /* MomentFromNow.swift in Sources */,
@@ -575,6 +593,7 @@
 				3A6429C61A6D33FA00B10310 /* Extensions.swift in Sources */,
 				3AB0FB8D1A6D1644006449DB /* Duration.swift in Sources */,
 				3A6429C41A6D2C8700B10310 /* Operators.swift in Sources */,
+				2955E3DA1DBC175600BEA06F /* MomentToNow.swift in Sources */,
 				3AB0FB8B1A6D1629006449DB /* TimeUnit.swift in Sources */,
 				3AFB8ABA1DAE395000356653 /* LazyBox.swift in Sources */,
 				2877F4E01D06BF0E00B66806 /* MomentFromNow.swift in Sources */,
@@ -613,6 +632,7 @@
 				E2F6253F1C357BC00057AE1D /* Extensions.swift in Sources */,
 				E2F625401C357BC00057AE1D /* Duration.swift in Sources */,
 				E2F625411C357BC00057AE1D /* Operators.swift in Sources */,
+				2955E3DB1DBC175600BEA06F /* MomentToNow.swift in Sources */,
 				E2F625421C357BC00057AE1D /* TimeUnit.swift in Sources */,
 				3AFB8ABC1DAE395000356653 /* LazyBox.swift in Sources */,
 				2877F4E11D06BF0E00B66806 /* MomentFromNow.swift in Sources */,
