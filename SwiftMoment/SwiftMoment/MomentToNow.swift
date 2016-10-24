@@ -16,82 +16,85 @@ extension Moment {
     /// - returns: A localized string.
   public func toNow() -> String {
     let timeDiffDuration = moment().intervalSince(self)
-    let deltaSeconds = timeDiffDuration.seconds
+    let deltaSeconds = -timeDiffDuration.seconds+1
+    
+    debugPrint("deltaSeconds", deltaSeconds)
     
     var value: Double!
     
-    if deltaSeconds > -5 {
+    if deltaSeconds < 5 {
       // Just Now
       return NSDateTimeAgoLocalizedStrings("Just now")
       
     }
-    else if deltaSeconds > -Moment.minuteInSeconds {
+    else if deltaSeconds < Moment.minuteInSeconds {
       // Seconds Ago
-      return stringFromFormat("%%d %@seconds ago", withValue: Int(deltaSeconds))
+      return stringFromFormat("In %%d %@seconds", withValue: Int(deltaSeconds))
       
     }
-    else if deltaSeconds > -(Moment.minuteInSeconds * 2) {
+    else if deltaSeconds < (Moment.minuteInSeconds * 2) {
       // A Minute Ago
-      return NSDateTimeAgoLocalizedStrings("A minute ago")
+      return NSDateTimeAgoLocalizedStrings("In a minute")
       
     }
-    else if deltaSeconds > -Moment.hourInSeconds {
+    else if deltaSeconds < Moment.hourInSeconds {
       // Minutes Ago
-      return stringFromFormat("in %%d %@minutes", withValue: Int(deltaSeconds / Moment.minuteInSeconds))
+      return stringFromFormat("In %%d %@minutes", withValue: Int(deltaSeconds / Moment.minuteInSeconds))
       
     }
-    else if deltaSeconds > -(Moment.hourInSeconds * 2) {
+    else if deltaSeconds < (Moment.hourInSeconds * 1.5) {
       // An Hour Ago
       return NSDateTimeAgoLocalizedStrings("In an hour")
       
     }
-    else if deltaSeconds > -Moment.dayInSeconds {
+    else if deltaSeconds < Moment.dayInSeconds {
       // Hours Ago
-      value = -floor(deltaSeconds / Moment.hourInSeconds)
-      return stringFromFormat("in %%d %@hours", withValue: Int(value))
+      value = round(deltaSeconds / Moment.hourInSeconds)
+      debugPrint("value", deltaSeconds / Moment.hourInSeconds, value)
+      return stringFromFormat("In %%d %@hours", withValue: Int(value))
       
     }
     else if deltaSeconds < (Moment.dayInSeconds * 2) {
-      // Yesterday
-      return NSDateTimeAgoLocalizedStrings("Yesterday")
+      // Tomorrow
+      return NSDateTimeAgoLocalizedStrings("Tomorrow")
       
     }
     else if deltaSeconds < Moment.weekInSeconds {
       // Days Ago
       value = floor(deltaSeconds / Moment.dayInSeconds)
-      return stringFromFormat("%%d %@days ago", withValue: Int(value))
+      return stringFromFormat("In %%d %@days", withValue: Int(value))
       
     }
     else if deltaSeconds < (Moment.weekInSeconds * 2) {
       // Last Week
-      return NSDateTimeAgoLocalizedStrings("Last week")
+      return NSDateTimeAgoLocalizedStrings("Next week")
       
     }
     else if deltaSeconds < Moment.monthInSeconds {
       // Weeks Ago
       value = floor(deltaSeconds / Moment.weekInSeconds)
-      return stringFromFormat("%%d %@weeks ago", withValue: Int(value))
+      return stringFromFormat("In %%d %@weeks", withValue: Int(value))
       
     }
     else if deltaSeconds < (Moment.dayInSeconds * 61) {
       // Last month
-      return NSDateTimeAgoLocalizedStrings("Last month")
+      return NSDateTimeAgoLocalizedStrings("Next month")
       
     }
     else if deltaSeconds < Moment.yearInSeconds {
       // Month Ago
       value = floor(deltaSeconds / Moment.monthInSeconds)
-      return stringFromFormat("%%d %@months ago", withValue: Int(value))
+      return stringFromFormat("In %%d %@months", withValue: Int(value))
       
     }
     else if deltaSeconds < (Moment.yearInSeconds * 2) {
       // Last Year
-      return NSDateTimeAgoLocalizedStrings("Last year")
+      return NSDateTimeAgoLocalizedStrings("Next year")
     }
     
     // Years Ago
     value = floor(deltaSeconds / Moment.yearInSeconds)
-    return stringFromFormat("%%d %@years ago", withValue: Int(value))
+    return stringFromFormat("In %%d %@years", withValue: Int(value))
   }
 
     private func stringFromFormat(_ format: String, withValue value: Int) -> String {
@@ -147,7 +150,7 @@ extension Moment {
             return ""
         }
 
-        if localeCode == "ru" {
+        if localeCode == "ru" || localeCode == "uk" {
             let xy = Int(floor(value)) % 100
             let y = Int(floor(value)) % 10
 

@@ -4,107 +4,107 @@ Assume value for (seconds, hours, minutes, days, weeks, months or years) is XXXY
 */
 
 /* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
-"%d days ago" = "%d дней назад";
+"In %d days" = "Через %d дней";
 
 /* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
-"%d _days ago" = "%d дня назад";
+"In %d _days" = "Через %d дня";
 
 /* Y == 1 AND XY != 11; */
-"%d __days ago" = "%d день назад";
+"In %d __days" = "Через %d день";
 
 
 /* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
-"%d hours ago" = "%d часов назад";
+"In %d hours" = "Через %d часов";
 
 /* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
-"%d _hours ago" = "%d часа назад";
+"In %d _hours" = "Через %d часа";
 
 /* Y == 1 AND XY != 11; */
-"%d __hours ago" = "%d час назад";
+"In %d __hours" = "Через %d час";
 
 
 /* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
-"%d minutes ago" = "%d минут назад";
+"In %d minutes" = "Через %d минут";
 
 /* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
-"%d _minutes ago" = "%d минуты назад";
+"In %d _minutes" = "Через %d минуты";
 
 /* Y == 1 AND XY != 11; */
-"%d __minutes ago" = "%d минуту назад";
+"In %d __minutes" = "Через %d минуту";
 
 
 /* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
-"%d months ago" = "%d месяцев назад";
+"In %d months" = "Через %d месяцев";
 
 /* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
-"%d _months ago" = "%d месяца назад";
+"In %d _months" = "Через %d месяца";
 
 /* Y == 1 AND XY != 11; */
-"%d __months ago" = "%d месяц назад";
+"In %d __months" = "Через %d месяц";
 
 
 /* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
-"%d seconds ago" = "%d секунд назад";
+"In %d seconds" = "Через %d секунд";
 
 /* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
-"%d _seconds ago" = "%d секунды назад";
+"In %d _seconds" = "Через %d секунды";
 
 /* Y == 1 AND XY != 11; */
-"%d __seconds ago" = "%d секунду назад";
+"In %d __seconds" = "Через %d секунду";
 
 
 /* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
-"%d weeks ago" = "%d недель назад";
+In "%d weeks" = "Через %d недель";
 
 /* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
-"%d _weeks ago" = "%d недели назад";
+"In %d _weeks" = "Через %d недели";
 
 /* Y == 1 AND XY != 11; */
-"%d __weeks ago" = "%d неделю назад";
+"In %d __weeks" = "Через %d неделю";
 
 
 /* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
-"%d years ago" = "%d лет назад";
+"In %d years" = "Через %d лет";
 
 /* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
-"%d _years ago" = "%d года назад";
+"In %d _years" = "Через %d года";
 
 /* Y == 1 AND XY != 11; */
-"%d __years ago" = "%d год назад";
+"In %d __years" = "Через %d год";
 
 
 /* No comment provided by engineer. */
-"A minute ago" = "Минуту назад";
+"In a minute" = "Через минуту";
 
 /* No comment provided by engineer. */
-"An hour ago" = "Час назад";
+"In an hour" = "Через час";
 
 /* No comment provided by engineer. */
 "Just now" = "Только что";
 
 /* No comment provided by engineer. */
-"Last month" = "Месяц назад";
+"Next month" = "В следующем месяце";
 
 /* No comment provided by engineer. */
-"Last week" = "Неделю назад";
+"Next week" = "На следующей неделе";
 
 /* No comment provided by engineer. */
-"Last year" = "Год назад";
+"Next year" = "В следующем году";
 
 /* No comment provided by engineer. */
-"Yesterday" = "Вчера";
+"Tomorrow" = "Завтра";
 
 /* No comment provided by engineer. */
-"1 year ago" = "1 год назад";
+"In 1 year" = "Через 1 год";
 
 /* No comment provided by engineer. */
-"1 month ago" = "1 месяц назад";
+"In 1 month" = "Через 1 месяц";
 
 /* No comment provided by engineer. */
-"1 week ago" = "1 неделю назад";
+"In 1 week" = "Через 1 неделю";
 
 /* No comment provided by engineer. */
-"1 day ago" = "1 день назад";
+"In 1 day" = "Через 1 день";
 
 /* No comment provided by engineer. */
 "This morning" = "Этим утром";

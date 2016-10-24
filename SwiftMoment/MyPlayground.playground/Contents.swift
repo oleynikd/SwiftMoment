@@ -11,8 +11,20 @@ obj.format("YYYY MMMM dd")
 
 obj.fromNow()
 
-var yesterday = moment(locale: Locale(identifier: "ES")) - 2.days
-yesterday.fromNow()
+var date = moment(locale: Locale(identifier: "uk_RU"))
+// 123
+(date+5.seconds).toNow()
+(date+55.seconds).toNow()
+(date+5.minutes).toNow()
+(date+14.minutes).toNow()
+(date+91.minutes).toNow()
+(date+1.hours).toNow()
+(date+2.hours).toNow()
+(date+3.hours).toNow()
+(date+30.hours).toNow()
+(date+300.hours).toNow()
+(date+3000.hours).toNow()
+
 
 let today = moment()
 let first = moment(today).add(50.days)
