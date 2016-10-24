@@ -18,8 +18,6 @@ extension Moment {
     let timeDiffDuration = moment().intervalSince(self)
     let deltaSeconds = -timeDiffDuration.seconds+1
     
-    debugPrint("deltaSeconds", deltaSeconds)
-    
     var value: Double!
     
     if deltaSeconds < 5 {
@@ -50,7 +48,6 @@ extension Moment {
     else if deltaSeconds < Moment.dayInSeconds {
       // Hours Ago
       value = round(deltaSeconds / Moment.hourInSeconds)
-      debugPrint("value", deltaSeconds / Moment.hourInSeconds, value)
       return stringInFormat("In %%d %@hours", withValue: Int(value))
       
     }
