@@ -24,86 +24,86 @@ extension Moment {
     
     if deltaSeconds < 5 {
       // Just Now
-      return NSDateTimeAgoLocalizedStrings("Just now")
+      return NSDateTimeInFutureLocalizedStrings("Just now")
       
     }
     else if deltaSeconds < Moment.minuteInSeconds {
       // Seconds Ago
-      return stringFromFormat("In %%d %@seconds", withValue: Int(deltaSeconds))
+      return stringInFormat("In %%d %@seconds", withValue: Int(deltaSeconds))
       
     }
     else if deltaSeconds < (Moment.minuteInSeconds * 2) {
       // A Minute Ago
-      return NSDateTimeAgoLocalizedStrings("In a minute")
+      return NSDateTimeInFutureLocalizedStrings("In a minute")
       
     }
     else if deltaSeconds < Moment.hourInSeconds {
       // Minutes Ago
-      return stringFromFormat("In %%d %@minutes", withValue: Int(deltaSeconds / Moment.minuteInSeconds))
+      return stringInFormat("In %%d %@minutes", withValue: Int(deltaSeconds / Moment.minuteInSeconds))
       
     }
     else if deltaSeconds < (Moment.hourInSeconds * 1.5) {
       // An Hour Ago
-      return NSDateTimeAgoLocalizedStrings("In an hour")
+      return NSDateTimeInFutureLocalizedStrings("In an hour")
       
     }
     else if deltaSeconds < Moment.dayInSeconds {
       // Hours Ago
       value = round(deltaSeconds / Moment.hourInSeconds)
       debugPrint("value", deltaSeconds / Moment.hourInSeconds, value)
-      return stringFromFormat("In %%d %@hours", withValue: Int(value))
+      return stringInFormat("In %%d %@hours", withValue: Int(value))
       
     }
     else if deltaSeconds < (Moment.dayInSeconds * 2) {
       // Tomorrow
-      return NSDateTimeAgoLocalizedStrings("Tomorrow")
+      return NSDateTimeInFutureLocalizedStrings("Tomorrow")
       
     }
     else if deltaSeconds < Moment.weekInSeconds {
       // Days Ago
       value = floor(deltaSeconds / Moment.dayInSeconds)
-      return stringFromFormat("In %%d %@days", withValue: Int(value))
+      return stringInFormat("In %%d %@days", withValue: Int(value))
       
     }
     else if deltaSeconds < (Moment.weekInSeconds * 2) {
       // Last Week
-      return NSDateTimeAgoLocalizedStrings("Next week")
+      return NSDateTimeInFutureLocalizedStrings("Next week")
       
     }
     else if deltaSeconds < Moment.monthInSeconds {
       // Weeks Ago
       value = floor(deltaSeconds / Moment.weekInSeconds)
-      return stringFromFormat("In %%d %@weeks", withValue: Int(value))
+      return stringInFormat("In %%d %@weeks", withValue: Int(value))
       
     }
     else if deltaSeconds < (Moment.dayInSeconds * 61) {
       // Last month
-      return NSDateTimeAgoLocalizedStrings("Next month")
+      return NSDateTimeInFutureLocalizedStrings("Next month")
       
     }
     else if deltaSeconds < Moment.yearInSeconds {
       // Month Ago
       value = floor(deltaSeconds / Moment.monthInSeconds)
-      return stringFromFormat("In %%d %@months", withValue: Int(value))
+      return stringInFormat("In %%d %@months", withValue: Int(value))
       
     }
     else if deltaSeconds < (Moment.yearInSeconds * 2) {
       // Last Year
-      return NSDateTimeAgoLocalizedStrings("Next year")
+      return NSDateTimeInFutureLocalizedStrings("Next year")
     }
     
     // Years Ago
     value = floor(deltaSeconds / Moment.yearInSeconds)
-    return stringFromFormat("In %%d %@years", withValue: Int(value))
+    return stringInFormat("In %%d %@years", withValue: Int(value))
   }
 
-    private func stringFromFormat(_ format: String, withValue value: Int) -> String {
+    private func stringInFormat(_ format: String, withValue value: Int) -> String {
         let localeFormat = String(format: format,
                                   getLocaleFormatUnderscoresWithValue(Double(value)))
-        return String(format: NSDateTimeAgoLocalizedStrings(localeFormat), value)
+        return String(format: NSDateTimeInFutureLocalizedStrings(localeFormat), value)
     }
 
-    private func NSDateTimeAgoLocalizedStrings(_ key: String) -> String {
+    private func NSDateTimeInFutureLocalizedStrings(_ key: String) -> String {
         // get framework bundle
         guard let bundleIdentifier = Bundle(for: MomentBundle.self).bundleIdentifier  else {
             return ""
