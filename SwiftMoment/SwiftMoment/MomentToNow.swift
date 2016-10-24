@@ -150,7 +150,7 @@ extension Moment {
             return ""
         }
 
-        if localeCode == "ru" || localeCode == "uk" {
+        if localeCode.range(of: "ru") != nil || localeCode.range(of: "uk") != nil {
             let xy = Int(floor(value)) % 100
             let y = Int(floor(value)) % 10
 
