@@ -40,10 +40,6 @@
 		2955E3DB1DBC175600BEA06F /* MomentToNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955E3D91DBC175600BEA06F /* MomentToNow.swift */; };
 		2955E3DC1DBC175600BEA06F /* MomentToNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955E3D91DBC175600BEA06F /* MomentToNow.swift */; };
 		2955E3DD1DBC175600BEA06F /* MomentToNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955E3D91DBC175600BEA06F /* MomentToNow.swift */; };
-		298C87421DBE787F00BA498A /* MomentToNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 298C87411DBE787F00BA498A /* MomentToNow.bundle */; };
-		298C87431DBE787F00BA498A /* MomentToNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 298C87411DBE787F00BA498A /* MomentToNow.bundle */; };
-		298C87441DBE787F00BA498A /* MomentToNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 298C87411DBE787F00BA498A /* MomentToNow.bundle */; };
-		298C87451DBE787F00BA498A /* MomentToNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 298C87411DBE787F00BA498A /* MomentToNow.bundle */; };
 		3A6429C41A6D2C8700B10310 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C31A6D2C8700B10310 /* Operators.swift */; };
 		3A6429C61A6D33FA00B10310 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C51A6D33FA00B10310 /* Extensions.swift */; };
 		3A6429C81A6D345500B10310 /* DurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C71A6D345500B10310 /* DurationTests.swift */; };
@@ -106,7 +102,6 @@
 		2877F4DF1D06BF0E00B66806 /* MomentFromNow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentFromNow.swift; sourceTree = "<group>"; };
 		28C0DBC21D057D9F00279645 /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2955E3D91DBC175600BEA06F /* MomentToNow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentToNow.swift; sourceTree = "<group>"; };
-		298C87411DBE787F00BA498A /* MomentToNow.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MomentToNow.bundle; sourceTree = "<group>"; };
 		3A6429C31A6D2C8700B10310 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		3A6429C51A6D33FA00B10310 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3A6429C71A6D345500B10310 /* DurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationTests.swift; sourceTree = "<group>"; };
@@ -209,7 +204,6 @@
 		3AB0FB6E1A6D15F8006449DB /* SwiftMoment */ = {
 			isa = PBXGroup;
 			children = (
-				298C87411DBE787F00BA498A /* MomentToNow.bundle */,
 				53CB62721C919E8000BA62E9 /* MomentFromNow.bundle */,
 				3AB0FB711A6D15F8006449DB /* SwiftMoment.h */,
 				3AB0FB6F1A6D15F8006449DB /* Supporting Files */,
@@ -486,7 +480,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2877F4D41D06B42700B66806 /* MomentFromNow.bundle in Resources */,
-				298C87441DBE787F00BA498A /* MomentToNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +496,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2877F4D61D06B42900B66806 /* MomentFromNow.bundle in Resources */,
-				298C87451DBE787F00BA498A /* MomentToNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,7 +504,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				53C2DA3B1C99956E00604118 /* MomentFromNow.bundle in Resources */,
-				298C87421DBE787F00BA498A /* MomentToNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,7 +528,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				53CB62741C919E8000BA62E9 /* MomentFromNow.bundle in Resources */,
-				298C87431DBE787F00BA498A /* MomentToNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

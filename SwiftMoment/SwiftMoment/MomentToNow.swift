@@ -117,14 +117,14 @@ extension Moment {
             return ""
         }
 
-        let bundleName = "MomentToNow.bundle"
+        let bundleName = "MomentFromNow.bundle"
         let path = URL(fileURLWithPath: resourcePath).appendingPathComponent(bundleName)
         guard let bundle = Bundle(url: path) else {
             return ""
         }
 
         if let languageBundle = getLanguageBundle(bundle) {
-            return languageBundle.localizedString(forKey: key, value: "", table: "NSDateTimeAgo")
+            return languageBundle.localizedString(forKey: key, value: "", table: "NSDateTimeInFuture")
         }
 
         return ""

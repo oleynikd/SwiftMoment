@@ -11,7 +11,7 @@ obj.format("YYYY MMMM dd")
 
 obj.fromNow()
 
-var date = moment(locale: Locale(identifier: "uk_RU"))
+var date = moment(locale: Locale(identifier: "uk"))
 // 123
 (date+5.seconds).toNow()
 (date+55.seconds).toNow()
